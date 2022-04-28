@@ -1,0 +1,120 @@
+testbed:
+    name: 'fnd-tb'
+devices:
+    fnd-auto-nms:
+        type: 'linux'
+        tacacs:
+            username: 'root'
+        passwords:
+            linux: 'Sgbu123!'
+        connections:
+            linux:
+                protocol: ssh
+                ip: '10.104.188.157'
+        custom:
+            server: 'nms_server'
+            ip: '127.0.0.1'
+            gui_uname: 'root'
+            gui_pwd: 'Sgbu123!'
+            auto_user_ws: 'satjonna-sjc'
+            nonroot_domainname: 'nonroot_domain'
+            nonroot_username: 'nonroot_username'
+            gui_nonroot_uname: 'automation'
+            gui_nonroot_pwd: 'Sgbu12345!'
+            
+            # Device details for serial console
+            rtr_eid: 'CGR1240/K9+JAD202509Y5'
+            device_type: 'cgr1000'
+            console_ip: '10.104.188.171'
+            console_port: '2004'
+            dev_mgmt_ip: '10.104.188.166'
+            dev_username: 'admin'
+            dev_password: 'Sgbu123!'
+            dev_mgmt_intf: 'GigabitEthernet2/1'
+
+            # path_to_fup_dev: '/ws/satjonna-sjc/pyats/iot-fnd-4.5/ui_automation/akn/'
+            fup_file1: 'MC7700_03.05.29.03_00_generic_000.000_001.cwe'
+            fup_file2: 'MC7304_1102029_05.05.58.00_00_TELSTRA_005.014_000.spk'
+            # device_eid: '00173B05005D0045'
+
+            automation_owner: 'BangaloeIoT'
+            product_version: 'Version: 4.7.0-29'
+            # 5th Aug 2020: updated new firefox profiles
+            firefoxprofile1: '/root/.mozilla/firefox/rltq01jv.autofox1'
+            firefoxprofile2: '/root/.mozilla/firefox/n74kl8p6.autofox2'
+            firefoxprofile3: '/root/.mozilla/firefox/qi3k9x54.autofox3'
+            firefoxprofile4: '/root/.mozilla/firefox/ndpkcqds.autofox4'
+            firefoxprofile5: '/root/.mozilla/firefox/4lklyaxw.autofox5'
+            firefoxprofile6: '/root/.mozilla/firefox/1ikqitw3.autofox6'
+            firefoxprofile7: '/root/.mozilla/firefox/uimn258d.autofox7'
+            firefoxprofile8: '/root/.mozilla/firefox/e8g8qzsy.autofox8'
+            firefoxprofile9: '/root/.mozilla/firefox/kwnnak23.autofox9'
+            firefoxprofile10: '/root/.mozilla/firefox/oblmdhnq.autofox10'
+
+            ir500_eid: 'ED02DFFFE6E0EEB'
+            # path_to_lic_dev: '/ws/satjonna-sjc/pyats/iot-fnd-4.5/ui_automation/4.5/aknath/licensing/device_csv/'
+            # device_eid: '00173B05005D0045'
+            # cgmesh_eid: 'cgmesh_dummy_eid'
+            # ir510_eid: '00173b00ABCDEF01'
+            # cgr1000_eid: 'CGR1120/K9+JAF1613BFMS'
+            # cgr1120_eid: 'CGR1120/K9+JAF1613BFMS'
+            # ir1100_eid: 'IR1101-K9+FCW23090HMN'
+            
+            cgr1240_eid: 'CGR1240/K9+JAD202509Y5'
+            # cgr1240_eid: 'CGR1240/K9+FTX2310G00T'
+
+            # ir800_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            # ir809_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            # ir829_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            #ir829_eid: 'IR829M-2LTE-EA-BK9+FGL220594XH'
+
+            # test_eid: 'CGR1120/K9+JAF1702BGEC'
+            # test_her_eid: 'cg-asr-2'
+            # test_server_eid: 'IoT-FND+Satish-NMS'
+            config_group_change: 'config_group_change.csv'
+            curl_ip: '10.65.205.75'
+            curl_username: 'root'
+            curl_pwd: 'cisco123'
+            ep_Id: '00173b00ABCDEF01'
+            fup_url: 'https://10.104.188.157/resource/rest/api/uploadIOxFile'
+            fups_url: 'https://10.104.188.157/resource/rest/api/uploadJobStatuses/'
+            fup_file: '@file_upl_sample.txt'
+            fup_fileName: 'file_upl_sample.txt'
+            test_markdown: 'MarkDown_devices.csv'
+            newreg_mesh_eid: '00183bab00100021'
+            ztd_devices: 'ztd_devices.csv'
+            # uid: "2001:420:7bf:8e8:f514:60d7:a78e:23eb"
+            # reboot_devices: 'reboot_devices.csv'
+            # image_location: '/ws/satjonna-sjc/pyats/iot-fnd-4.4/image_files/ir800-universalk9-bundle.SPA.157-3.M1.fc2'
+            # image: 'ir800-universalk9-bundle.SPA.157-3.M1.fc2'
+            # token: 'YzE4MTkwNGUtYjlmYS00NjlkLTlkM2ItY2ZhNDY1ZTJkMWI5LTE1Nzc1NTg3%0AMDAyMzV8WDRtS0dMdUlyZGMzRnpQK1dGZms2TDFoOUZpbkNIK1BBVk1jZTNv%0AZWJvUT0%3D%0A'
+   
+    # JAD202509Y5:
+    #     type: 'cgos'
+    #     tacacs:
+    #         username: "admin"
+    #     passwords:
+    #         tacacs: Sgbu123!
+    #         enable: cisco
+    #     connections:
+    #         a:
+    #             protocol: telnet
+    #             ip: "10.104.188.171"
+    #             port: 2004
+    #         alt:
+    #             protocol: ssh
+    #             ip: "10.104.188.166"
+                
+    #     custom:
+    #             eid: 'CGR1240/K9+JAD202509Y5'
+    #             device_type: 'cgr1000'
+    #             curr_staus: unheard
+    #             #Device mgmt interface details
+    #             server: 'TestBedDevices'
+    #             dev_mgmt_ip: '10.104.188.166'
+    #             dev_mgmt_ip_new: '10.104.188.226'
+    #             dev_username: 'admin'
+    #             dev_password: 'Sgbu123!'
+    #             dev_mgmt_intf: 'GigabitEthernet2/1'
+
+                                            

@@ -1,0 +1,77 @@
+testbed:
+    name: 'fnd-tb'
+devices:
+    fnd-auto-nms:
+        type: 'linux'
+        tacacs:
+            username: 'root'
+        passwords:
+            linux: 'Sgbu21!!'
+        connections:
+            linux:
+                protocol: ssh
+                ip: '10.104.188.80'
+        custom:
+            server: 'nms_server'
+            ip: '127.0.0.1'
+            gui_uname: 'root'
+            gui_pwd: 'Sgbu21!!'
+            auto_user_ws: 'satjonna-sjc'
+            nonroot_domainname: 'nonroot_domain'
+            nonroot_username: "nonroot_username"
+            gui_nonroot_uname: 'automation'
+            gui_nonroot_pwd: 'Sgbu12345!'
+
+            mesh_eid: '00183bab00100000'
+            automation_owner: 'India'
+            product_version: 'Version: 4.4.0-49'
+            firefoxprofile1: '/root/.mozilla/firefox/j52zetl4.autofox1'
+            firefoxprofile2: '/root/.mozilla/firefox/2bycy2n7.autofox2'
+            firefoxprofile3: '/root/.mozilla/firefox/2axz5l6x.autofox3'
+            firefoxprofile4: '/root/.mozilla/firefox/wlrv1qri.autofox4'
+            firefoxprofile5: '/root/.mozilla/firefox/q89b6pze.autofox5'
+            firefoxprofile6: '/root/.mozilla/firefox/3g3fqk2h.autofox6'
+            firefoxprofile7: '/root/.mozilla/firefox/t129ym7i.autofox7'
+            firefoxprofile8: '/root/.mozilla/firefox/ovbn2dt0.autofox8'
+            firefoxprofile9: '/root/.mozilla/firefox/oy3bf446.autofox9'
+            firefoxprofile10: '/root/.mozilla/firefox/ab0jwciw.autofox10'
+            # ir500_eid: '00173b00ABCDEF06'
+            device_eid: '00173B05005D0045'
+            cgmesh_eid: 'cgmesh_dummy_eid'
+            ir510_eid: '00173b00ABCDEF01'
+            cgr1000_eid: 'CGR1120/K9+JAF1613BFMS'
+            cgr1120_eid: 'CGR1120/K9+JAF1613BFMS'
+            cgr1240_eid: 'CGR1240/K9+FTX2118G01C'
+            ir800_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            ir809_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            test_eid: 'CGR1120/K9+JAF1702BGEC'
+            test_her_eid: 'cg-asr-2'
+            test_server_eid: 'IoT-FND+Satish-NMS'
+            config_group_change: 'config_group_change.csv'
+            curl_ip: '10.65.205.75'
+            curl_username: 'root'
+            curl_pwd: 'cisco123'
+            ep_Id: '00173b00ABCDEF01'
+            fup_url: 'https://172.27.126.205/resource/rest/api/uploadIOxFile'
+            fups_url: 'https://172.27.126.205/resource/rest/api/uploadJobStatuses/'
+            fup_file: '@file_upl_sample.txt'
+            fup_fileName: 'file_upl_sample.txt'
+            lg_test_markdown: 'Lg_markDown_devices.csv'
+            #test_markdown: 'MarkDown_devices.csv'
+            newreg_mesh_eid: '00183bab00100021'
+            ztd_devices: 'ztd_devices.csv'
+            uid: "2001:420:7bf:8e8:f514:60d7:a78e:23eb"
+            reboot_devices: 'reboot_devices.csv'
+            mesh_id_ir530: '00183bab00100021'
+
+    fnd-auto-db:
+        type: 'linux'
+        tacacs:
+            username: "root"
+        passwords:
+            linux: Sgbu123!
+        connections:
+            linux:
+                protocol: ssh
+                ip: "10.104.188.67"
+        custom: {server: 'db_server'}

@@ -1,0 +1,91 @@
+testbed:
+    name: 'fnd-tb'
+devices:
+    fnd-auto-nms:
+        type: 'linux'
+        tacacs:
+            username: 'root'
+        passwords:
+            linux: 'Sgbu123!'
+        connections:
+            linux:
+                protocol: ssh
+                ip: '10.104.188.93'
+        custom:
+            server: 'nms_server'
+            ip: '127.0.0.1'
+            gui_uname: 'root'
+            gui_pwd: 'Sgbu123!'
+            auto_user_ws: 'satjonna-sjc'
+            nonroot_domainname: 'nonroot_domain'
+            nonroot_username: "nonroot_username"
+            gui_nonroot_uname: 'automation'
+            gui_nonroot_pwd: 'Sgbu1234!'
+            console_ip: '10.104.188.200'
+            console_port: '2016'
+
+            automation_owner: 'India'
+            product_version: 'Version: 4.4.0-22'
+            firefoxprofile1: '/root/.mozilla/firefox/8jmjd9p7.autofox1'
+            firefoxprofile2: '/root/.mozilla/firefox/7qfv79ns.autofox2'
+            firefoxprofile3: '/root/.mozilla/firefox/r75qs6cc.autofox3'
+            firefoxprofile4: '/root/.mozilla/firefox/osp8gvbe.autofox4'
+            firefoxprofile5: '/root/.mozilla/firefox/xk5gal59.autofox5'
+            firefoxprofile6: '/root/.mozilla/firefox/zo504qk8.autofox6'
+            firefoxprofile7: '/root/.mozilla/firefox/l4dyhtfc.autofox7'
+            firefoxprofile8: '/root/.mozilla/firefox/8v9mx64d.autofox8'
+            firefoxprofile9: '/root/.mozilla/firefox/aqhaxogr.autofox9'
+            firefoxprofile10: '/root/.mozilla/firefox/tg21rmpi.autofox10'
+            mesh_eids_ir500 : ['2ED02DFFFE6E0EF1', '00173B0500320038']
+            mesh_eids_ir510 : ['2ED02DFFFE6E0EF1']
+            mesh_eids_meter : ['00078108003D8600', '00078108003D8601', '00078108003D8602', '00078108003D8603', '00078108003D8604', '00078108003D8605'] 
+            #ir510_firmware_image: 'cg-mesh-dagw-6.4weekly-6415-ir510-fc43cde.bin' 
+            ir510_firmware_image: 'cg-mesh-dagw-6.4weekly-6416-ir510-caf66bb.bin'
+            ir510_fw_img_sch_table: 'cg-mesh-dagw-6.4.16-IR510-1.0-2.0'
+            #ir510_fw_img_sch_table: 'cg-mesh-node-6.4.17-IR529-1.0-2.0'
+
+    fnd-auto-db:
+        type: 'linux'
+        tacacs:
+            username: "root"
+        passwords:
+            linux: pdsL$\268
+            #linux: Sgbu123!
+        connections:
+            linux:
+                protocol: ssh
+                ip: "2.2.55.19"
+        custom: {server: 'db_server'}
+    fnd-auto-tps:
+        type: 'linux'
+        tacacs:
+            username: "root"
+        passwords:
+            linux: pdsL$\268
+            #linux: Sgbu123!
+        connections:
+            linux:
+                protocol: ssh
+                ip: "2.2.55.20"
+        custom: {server: 'tps_server'}
+    FTX2310G00T:
+        type: 'ios'
+        tacacs:
+            username: "cg-nms-administrator"
+        passwords:
+            tacacs: Sgbu123!
+            enable: cisco
+            line: Sgbu123!
+        connections:
+            a:
+                protocol: telnet
+                ip: "10.104.188.171"
+                port: 2004
+            alt:
+                protocol: ssh
+                ip: "10.104.188.249"
+        custom:
+            server: 'router'
+            eid: 'CGR1240/K9+FTX2310G00T'
+            device_type: 'cgr1000'
+            connection_type: 'mgmt'

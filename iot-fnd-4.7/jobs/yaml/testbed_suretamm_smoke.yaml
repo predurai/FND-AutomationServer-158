@@ -1,0 +1,165 @@
+testbed:
+    name: 'fnd-tb'
+devices:
+    fnd-auto-nms:
+        type: 'linux'
+        tacacs:
+            username: 'root'
+        passwords:
+            # linux: 'pdsL$268'
+            linux: 'Sgbu987!'
+        connections:
+            linux:
+                protocol: ssh
+                ip: '172.27.171.48'
+                # ip: '172.27.126.100'
+                # ip: '10.104.188.132'
+        custom:
+            server: 'nms_server'
+            ip: '127.0.0.1'
+            gui_uname: 'root'
+            # gui_pwd: 'pdsL$268'
+            gui_pwd: 'Sgbu789!'
+            auto_user_ws: 'satjonna-sjc'
+            nonroot_domainname: 'nonroot_domain'
+            nonroot_username: "nonroot_username"
+            gui_nonroot_uname: 'automation'
+            gui_nonroot_pwd: 'Sgbu12345!'
+            #ir510_eid : ['00173bab00100038']
+            ir510_eid: '00173B0500610035'
+
+            device_mgmt: 'device_mgmt.csv'
+            mesh_eid: '00183bab00100000'
+            automation_owner: 'India'
+            product_version: 'Version: 4.5.0-01'
+            satellite_url: 'https://172.27.89.142:8443'
+            satellite_uname: 'admin'
+            satellite_password: 'Admin!2345'
+            lg_test_markdown: 'Lg_markDown_devices.csv'
+            firefoxprofile1: '/root/.mozilla/firefox/j52zetl4.autofox1'
+            firefoxprofile2: '/root/.mozilla/firefox/2bycy2n7.autofox2'
+            firefoxprofile3: '/root/.mozilla/firefox/2axz5l6x.autofox3'
+            firefoxprofile4: '/root/.mozilla/firefox/wlrv1qri.autofox4'
+            firefoxprofile5: '/root/.mozilla/firefox/q89b6pze.autofox5'
+            firefoxprofile6: '/root/.mozilla/firefox/3g3fqk2h.autofox6'
+            firefoxprofile7: '/root/.mozilla/firefox/t129ym7i.autofox7'
+            firefoxprofile8: '/root/.mozilla/firefox/ovbn2dt0.autofox8'
+            firefoxprofile9: '/root/.mozilla/firefox/oy3bf446.autofox9'
+            firefoxprofile10: '/root/.mozilla/firefox/ab0jwciw.autofox10'
+            console_ip: '172.27.171.49'
+            console_port: '2066'
+            # ir500_eid: '00173b00ABCDEF06'
+            #device_eid: '00173B05005D0045'
+            device_id: 'CGR1120/K9+JAF1702BGEC'
+            interfaceType: 'IPv4'
+            groupName: 'Default-IR800'
+            device_eid: '00173b00ABCDEF01'
+            bact_dummy_eid: 'BACT_1'
+            cgmesh_eid: '00173bab00100000'
+            cgr_device: 'CGRJAF1613BFMS'
+            cgr1240_eid_pnp: 'CGR1240/K9+FTX2122G01V'
+            cgr_eid: 'CGR1120/K9+JAF1613BFMS'
+            ir800_device: 'IR829MBK9+FGL220594XH'
+            ir800_eid: 'IR809G-LTE-GA-K9+JMX19X0'
+            c800_device: 'IR829MBK9+FGL220594XH'
+            c800_eid: 'IR829M-2LTE-EA-BK9+FGL220594XH'
+            mesh_id: ['00173B0500610035']
+            ir530_eid: '2CD02D10006E0F6C'
+            cgr1200_eid: 'CGR1240/K9+FTX2122G01V'
+            ir809g_eid: 'IR809G-LTE-GA-K9+JMX2045X024'
+            endpoint: ['2CD02D10006E0F6C']
+            ir500_down_eid: '00173b00ABCDEF02'
+            cgr1000_eid: 'CGR1120/K9+JAF1613BFMS'
+            cgr1000_device_eid: 'FTX2122G01V'
+            cgr1120_eid: 'CGR1120/K9+FOC21255N03'
+            #cgr1240_eid: 'CGR1240/K9+FTX2118G01C'
+            cgr1240_eid: 'CGR1240/K9+FTX2122G00U'
+            ir809_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            #ir800_eid: 'IR\/809G-LTE-GA-K9+JMX19X0'
+            test_eid: 'CGR1120/K9+JAF1702BGEC'
+            Ir809_new_eid: 'IR809G-LTE-NA-K9+JMX2033X003'
+            test_her_eid: 'cg-asr-2'
+            test_server_eid: 'IoT-FND+Satish-NMS'
+            config_group_change: 'config_group_change.csv'
+            curl_ip: '10.65.205.75'
+            curl_username: 'root'
+            curl_pwd: 'cisco123'
+            firmware_upload_image: 'cgr1000-universalk9-bundle.SPA.156-2.T2.bin'
+            fw_firmware_upload_image: 'cg-mesh-dagw-5.7.19-0ff35cf-RELEASE-ir510.bin'
+            mesh_firmware_image: 'cg-mesh-node-5.7.9-fb507b8-RELEASE-cgeref1.bin'
+            mes_delete_iamge : 'cg-mesh-node-5.7.9-CGEREF1-1.0-1.0'
+            ep_Id: '00173b00ABCDEF01'
+            fup_url: 'https://172.27.126.205/resource/rest/api/uploadIOxFile'
+            fups_url: 'https://172.27.126.205/resource/rest/api/uploadJobStatuses/'
+            fup_file: '@file_upl_sample.txt'
+            fup_fileName: 'file_upl_sample.txt'
+            test_markdown: 'MarkDown_devices.csv'
+            range_extender_devices: 'ui_all_devices.csv'
+            ui_test_devices: 'ui_test_devices.csv'
+            newreg_mesh_eid: '00183bab00100021'
+            ztd_devices: 'ztd_devices_smoke_ir800.csv'
+            test_endpoint_eid: '00173bab00100000'
+            uid: "2001:420:7bf:8e8:f514:60d7:a78e:23eb"
+            action: 'Tunnel_Reprovisioning'
+            eidList: 'CGR1120/K9+JAF1702BGEC'
+            interfaceName: 'GigabitEthernet0'
+            executionDate: 2018-09-01
+            mesh_firmware_img_name: 'cg-mesh-node-55.6.10-RFLAN-3.60-3.80'
+            mesh_bkp_firmware_img_name: 'TEST-CGMESH3-RFLAN-3.60-3.80'
+            status: 'New'
+            users: 'suretamm,root'
+            app_version: '5.0.0.16'
+            script_version: ''
+            app_key: ''
+            work_order_name: 'workordersearch'
+            work_order_eid: 'IR807G-LTE-GA-K9+FCW21320020'
+            work_order_number: 'YNQMDDMU'
+            dev_username: 'admin'
+            start_date: '2020-08-28'
+            end_date: '2021-02-28'
+    fnd-auto-db:
+        type: 'linux'
+        tacacs:
+            username: "root"
+        passwords:
+            #linux: pdsL$\268
+            linux: Sgbu123!
+        connections:
+            linux:
+                protocol: ssh
+                ip: "172.27.171.24"
+        custom: {server: 'db_server'}
+    fnd-auto-tps:
+        type: 'linux'
+        tacacs:
+            username: "root"
+        passwords:
+            #linux: pdsL$\268
+            linux: Sgbu123!
+        connections:
+            linux:
+                protocol: ssh
+                ip: "2.2.53.3"
+        custom: {server: 'tps_server'}
+
+    FTX2122G01V:
+        type: 'ios'
+        tacacs:
+            username: "cg-nms-administrator"
+        passwords:
+            tacacs: Sgbu123!
+            enable: cisco
+            line: Sgbu123!
+        connections:
+            a:
+                protocol: telnet
+                ip: "172.27.171.49"
+                port: 2066
+            alt:
+                protocol: ssh
+                ip: "2.2.53.5"
+        custom:
+            server: 'router'
+            eid: 'CGR1240/K9+FTX2122G01V'
+            device_type: 'cgr1000'
+            connection_type: 'mgmt'
